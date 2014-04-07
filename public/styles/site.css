@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url(animation.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
 /* line 18, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -137,7 +138,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 8, ../sass/site.scss */
+/* line 24, ../sass/site.scss */
 #left-content {
   width: 35%;
   height: 100vh;
@@ -145,8 +146,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   display: table;
 }
-/* line 14, ../sass/site.scss */
+/* line 30, ../sass/site.scss */
 #left-content center {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* line 37, ../sass/site.scss */
+#right-content {
+  width: 65%;
+  height: 100vh;
+  margin-left: 35%;
+  position: absolute;
+  display: table;
+}
+/* line 44, ../sass/site.scss */
+#right-content center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 52, ../sass/site.scss */
+form input[type=text], form input[type=password] {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  color: #e67e22;
+  outline: none;
+}
+
+/* line 63, ../sass/site.scss */
+form input[type=text],
+form input[type=password],
+form input[type=submit] {
+  font-family: 'Roboto';
 }

@@ -7,6 +7,10 @@ angular.module('breakfastApp', ['ngRoute'])
         templateUrl: 'app/views/login.html',
         controller: 'MainCtrl'
     })
+    .when('/test', {
+        templateUrl: 'app/views/login.html',
+        controller: 'MainCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     });

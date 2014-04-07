@@ -145,6 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 12, ../sass/site_small.scss */
 #left-content center img {
   width: 180px;
-  margin-top: -4em;
+  margin-top: -65px;
+  margin-left: 1%;
   float: left;
 }

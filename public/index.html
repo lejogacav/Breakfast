@@ -10,23 +10,19 @@
     <script src="app/app.js"></script>
     <script src="app/controller.js"></script>
     
-
-    <link href="styles/site.css" rel="stylesheet">
+    <link rel="stylesheet" media ="screen and (min-width: 750px)" href="styles/site.css">
+    <link rel="stylesheet" media ="screen and (max-width: 750px)" href="styles/site_small.css">
     
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 
 <body  ng-app="breakfastApp">
-        <div id="left-content">
+    <div id="left-content">
         <center class="floating">   
             <img src="img/breakfast.png">
         </center>
     </div>
-    <div id="right-content">
-
-        <div class="container right-content" ng-view></div>
-        
-    </div>
+    <div id="right-content" class="container" ng-view></div>
     
 </body>
 </html>

@@ -4,15 +4,62 @@
 @import "screen";
 @import "print";
 @import "var";
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
 
+// Partie gauche de la page
+// #left-content {
+// 	width: 35%;
+// 	height: 100vh;
+// 	background-color: $bandoColor;
+// 	position: absolute;
+// 	float: left;
+// 	display:table;		
+// 	center{
+// 		display: table-cell;
+// 		vertical-align: middle;
+// 	}
+// }
+
+//Partie gauche de la page
 #left-content {
 	width: 35%;
 	height: 100vh;
-	background-color: $lightOrange;
+	background-color: $bandoColor;
 	position: absolute;
 	display:table;		
 	center{
 		display: table-cell;
 		vertical-align: middle;
 	}
+}
+
+//Partie droite de la page
+#right-content {
+	width: 65%;
+	height: 100vh;
+	margin-left: 35%;
+	// background-color: $red;
+	position: absolute;
+	display: table;
+	center{
+		display: table-cell;
+		vertical-align: middle;
+		// background-color: $red;
+	}
+}
+
+
+form input[type=text], form input[type=password] {
+	width: 200px;
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	color: $bandoColor;
+	outline: none;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=submit] {
+  font-family: 'Roboto';
 }
