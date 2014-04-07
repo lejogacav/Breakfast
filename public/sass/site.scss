@@ -1,0 +1,18 @@
+@import "reset";
+@import "animation.css";
+@import "ie";
+@import "screen";
+@import "print";
+@import "var";
+
+#left-content {
+	width: 35%;
+	height: 100vh;
+	background-color: $lightOrange;
+	position: absolute;
+	display:table;		
+	center{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
