@@ -335,7 +335,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   vertical-align: middle;
 }
 
-/* line 40, ../sass/site.scss */
+/* line 39, ../sass/site.scss */
 form input[type=text], form input[type=password] {
   -webkit-animation: colorChange 60s infinite;
   animation: colorChange 60s infinite;
@@ -345,7 +345,7 @@ form input[type=text], form input[type=password] {
   padding-left: 15px;
   outline: none;
 }
-/* line 51, ../sass/site.scss */
+/* line 50, ../sass/site.scss */
 form input[type=text], form input[type=password], form input[type=submit] {
   font-family: 'Roboto';
   font-size: 18px;

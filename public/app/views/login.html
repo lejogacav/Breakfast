@@ -1,14 +1,18 @@
 <center>
-	<form>
+	<!-- Passe dans la variable et vérifie si le formulaire est valide ou non -->
+	<form name="loginForm" ng-submit="submitLogin(loginForm.$valid)" novalidate>
 	    <ul>
 	        <li>
-	            <input type="text" placeholder="Username" />
+	        	<!-- Username -->
+	            <input type="text" placeholder="Username" ng-model="username" required/>
 	        </li>
 	        <li>
-	            <input type="password" placeholder="Password" />
+	        	<!-- Password -->
+	            <input type="password" placeholder="Password" ng-model="password" required/>
 	        </li>
 	        <li>
-	            <input type="submit" value="Login"/>
+	        	<!-- Submit button -->
+	            <input type="submit" value="Login" ng-disabled="loginForm.$invalid"/>
 	        </li>
 	    </ul>
 	</form>	
