@@ -6,25 +6,13 @@
 @import "var";
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 
-// Partie gauche de la page
-// #left-content {
-// 	width: 35%;
-// 	height: 100vh;
-// 	background-color: $bandoColor;
-// 	position: absolute;
-// 	float: left;
-// 	display:table;		
-// 	center{
-// 		display: table-cell;
-// 		vertical-align: middle;
-// 	}
-// }
-
 //Partie gauche de la page
 #left-content {
+	// Changement de couleur
+	-webkit-animation:backgroundColorChange $colorAnimationTime infinite;
+	animation:backgroundColorChange $colorAnimationTime infinite; 
 	width: 35%;
 	height: 100vh;
-	background-color: $bandoColor;
 	position: absolute;
 	display:table;		
 	center{
@@ -38,28 +26,30 @@
 	width: 65%;
 	height: 100vh;
 	margin-left: 35%;
-	// background-color: $red;
 	position: absolute;
 	display: table;
 	center{
 		display: table-cell;
 		vertical-align: middle;
-		// background-color: $red;
 	}
 }
 
 
-form input[type=text], form input[type=password] {
-	width: 200px;
-	height: 40px;
-	margin-bottom: 10px;
-	padding-left: 15px;
-	color: $bandoColor;
-	outline: none;
-}
-
-form input[type=text],
-form input[type=password],
-form input[type=submit] {
-  font-family: 'Roboto';
+form {
+	input[type=text], input[type=password]
+	{
+		// Changement de couleur
+		-webkit-animation:colorChange $colorAnimationTime infinite;
+		animation:colorChange $colorAnimationTime infinite; 
+		width: 200px;
+		height: 40px;
+		margin-bottom: 10px;
+		padding-left: 15px;
+		outline: none;	
+	}
+	input[type=text], input[type=password], input[type=submit]
+	{
+	  	font-family: 'Roboto';
+		font-size: 18px;	
+	}
 }

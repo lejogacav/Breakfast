@@ -138,21 +138,190 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 24, ../sass/site.scss */
+@-webkit-keyframes backgroundColorChange {
+  /* line 27, ../sass/_var.scss */
+  0% {
+    background-color: #e67e22;
+  }
+
+  /* line 28, ../sass/_var.scss */
+  14.3% {
+    background-color: #d35400;
+  }
+
+  /* line 29, ../sass/_var.scss */
+  28.6% {
+    background-color: #e74c3c;
+  }
+
+  /* line 30, ../sass/_var.scss */
+  42.9% {
+    background-color: #c0392b;
+  }
+
+  /* line 31, ../sass/_var.scss */
+  57.2% {
+    background-color: #3498db;
+  }
+
+  /* line 32, ../sass/_var.scss */
+  71.5% {
+    background-color: #2980b9;
+  }
+
+  /* line 33, ../sass/_var.scss */
+  85.8% {
+    background-color: #34495e;
+  }
+
+  /* line 34, ../sass/_var.scss */
+  100% {
+    background-color: #e67e22;
+  }
+}
+
+@keyframes backgroundColorChange {
+  /* line 38, ../sass/_var.scss */
+  0% {
+    background-color: #e67e22;
+  }
+
+  /* line 39, ../sass/_var.scss */
+  14.3% {
+    background-color: #d35400;
+  }
+
+  /* line 40, ../sass/_var.scss */
+  28.6% {
+    background-color: #e74c3c;
+  }
+
+  /* line 41, ../sass/_var.scss */
+  42.9% {
+    background-color: #c0392b;
+  }
+
+  /* line 42, ../sass/_var.scss */
+  57.2% {
+    background-color: #3498db;
+  }
+
+  /* line 43, ../sass/_var.scss */
+  71.5% {
+    background-color: #2980b9;
+  }
+
+  /* line 44, ../sass/_var.scss */
+  85.8% {
+    background-color: #34495e;
+  }
+
+  /* line 45, ../sass/_var.scss */
+  100% {
+    background-color: #e67e22;
+  }
+}
+
+@-webkit-keyframes colorChange {
+  /* line 52, ../sass/_var.scss */
+  0% {
+    color: #e67e22;
+  }
+
+  /* line 53, ../sass/_var.scss */
+  14.3% {
+    color: #d35400;
+  }
+
+  /* line 54, ../sass/_var.scss */
+  28.6% {
+    color: #e74c3c;
+  }
+
+  /* line 55, ../sass/_var.scss */
+  42.9% {
+    color: #c0392b;
+  }
+
+  /* line 56, ../sass/_var.scss */
+  57.2% {
+    color: #3498db;
+  }
+
+  /* line 57, ../sass/_var.scss */
+  71.5% {
+    color: #2980b9;
+  }
+
+  /* line 58, ../sass/_var.scss */
+  85.8% {
+    color: #34495e;
+  }
+
+  /* line 59, ../sass/_var.scss */
+  100% {
+    color: #e67e22;
+  }
+}
+
+@keyframes colorChange {
+  /* line 62, ../sass/_var.scss */
+  0% {
+    color: #e67e22;
+  }
+
+  /* line 63, ../sass/_var.scss */
+  14.3% {
+    color: #d35400;
+  }
+
+  /* line 64, ../sass/_var.scss */
+  28.6% {
+    color: #e74c3c;
+  }
+
+  /* line 65, ../sass/_var.scss */
+  42.9% {
+    color: #c0392b;
+  }
+
+  /* line 66, ../sass/_var.scss */
+  57.2% {
+    color: #3498db;
+  }
+
+  /* line 67, ../sass/_var.scss */
+  71.5% {
+    color: #2980b9;
+  }
+
+  /* line 68, ../sass/_var.scss */
+  85.8% {
+    color: #34495e;
+  }
+
+  /* line 69, ../sass/_var.scss */
+  100% {
+    color: #e67e22;
+  }
+}
+
+/* line 10, ../sass/site.scss */
 #left-content {
+  -webkit-animation: backgroundColorChange 60s infinite;
+  animation: backgroundColorChange 60s infinite;
   width: 35%;
   height: 100vh;
-  background-color: #e67e22;
   position: absolute;
   display: table;
 }
-/* line 30, ../sass/site.scss */
+/* line 18, ../sass/site.scss */
 #left-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 37, ../sass/site.scss */
+/* line 25, ../sass/site.scss */
 #right-content {
   width: 65%;
   height: 100vh;
@@ -160,25 +329,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   display: table;
 }
-/* line 44, ../sass/site.scss */
+/* line 31, ../sass/site.scss */
 #right-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 52, ../sass/site.scss */
+/* line 40, ../sass/site.scss */
 form input[type=text], form input[type=password] {
+  -webkit-animation: colorChange 60s infinite;
+  animation: colorChange 60s infinite;
   width: 200px;
   height: 40px;
   margin-bottom: 10px;
   padding-left: 15px;
-  color: #e67e22;
   outline: none;
 }
-
-/* line 63, ../sass/site.scss */
-form input[type=text],
-form input[type=password],
-form input[type=submit] {
+/* line 51, ../sass/site.scss */
+form input[type=text], form input[type=password], form input[type=submit] {
   font-family: 'Roboto';
+  font-size: 18px;
 }

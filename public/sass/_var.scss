@@ -7,3 +7,64 @@ $lightOrange : #e67e22;
 // Couleur du bandeau Breakfast
 $bandoColor : $lightOrange;
 
+// Couleurs
+$lightOrange : #e67e22;
+$darkOrange : #d35400;
+$lightRed : #e74c3c;
+$darkRed : #c0392b;
+$lightBlue : #3498db;
+$darkBlue : #2980b9;
+$lightAsphaltBlue : #34495e;
+
+
+// Temps animation couleur
+$colorAnimationTime : 60s; 
+
+
+// Animation de changement de couleur du background
+@-webkit-keyframes backgroundColorChange
+{
+	0% {background-color:$lightOrange;}
+	14.3% {background-color:$darkOrange;}
+	28.6% {background-color:$lightRed;}
+	42.9% {background-color:$darkRed;}
+	57.2% {background-color:$lightBlue;}
+	71.5% {background-color:$darkBlue;}
+	85.8% {background-color:$lightAsphaltBlue;}
+	100% {background-color:$lightOrange;}	
+}
+
+@keyframes backgroundColorChange {	
+	0% {background-color:$lightOrange;}
+	14.3% {background-color:$darkOrange;}
+	28.6% {background-color:$lightRed;}
+	42.9% {background-color:$darkRed;}
+	57.2% {background-color:$lightBlue;}
+	71.5% {background-color:$darkBlue;}
+	85.8% {background-color:$lightAsphaltBlue;}
+	100% {background-color:$lightOrange;}	
+}
+
+
+// Animation changement de couleur des inputs
+@-webkit-keyframes colorChange
+{
+	0% {color:$lightOrange;}
+	14.3% {color:$darkOrange;}
+	28.6% {color:$lightRed;}
+	42.9% {color:$darkRed;}
+	57.2% {color:$lightBlue;}
+	71.5% {color:$darkBlue;}
+	85.8% {color:$lightAsphaltBlue;}
+	100% {color:$lightOrange;}	
+}
+@keyframes colorChange {
+	0% {color:$lightOrange;}
+	14.3% {color:$darkOrange;}
+	28.6% {color:$lightRed;}
+	42.9% {color:$darkRed;}
+	57.2% {color:$lightBlue;}
+	71.5% {color:$darkBlue;}
+	85.8% {color:$lightAsphaltBlue;}
+	100% {color:$lightOrange;}
+}
