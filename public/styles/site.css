@@ -306,7 +306,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 
-/* line 10, ../sass/site.scss */
+/*@import url(http://fonts.googleapis.com/css?family=Bevan);*/
+/* line 11, ../sass/site.scss */
 #left-content {
   -webkit-animation: backgroundColorChange 60s infinite;
   animation: backgroundColorChange 60s infinite;
@@ -315,27 +316,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   display: table;
 }
-/* line 18, ../sass/site.scss */
+/* line 19, ../sass/site.scss */
 #left-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 25, ../sass/site.scss */
+/* line 26, ../sass/site.scss */
 #right-content {
+  background: white url(/img/background.png) repeat;
   width: 65%;
   height: 100vh;
   margin-left: 35%;
   position: absolute;
   display: table;
 }
-/* line 31, ../sass/site.scss */
+/* line 33, ../sass/site.scss */
 #right-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 39, ../sass/site.scss */
+/* line 41, ../sass/site.scss */
 form input[type=text], form input[type=password] {
   -webkit-animation: colorChange 60s infinite;
   animation: colorChange 60s infinite;
@@ -345,8 +347,13 @@ form input[type=text], form input[type=password] {
   padding-left: 15px;
   outline: none;
 }
-/* line 50, ../sass/site.scss */
+/* line 52, ../sass/site.scss */
 form input[type=text], form input[type=password], form input[type=submit] {
   font-family: 'Roboto';
   font-size: 18px;
+}
+
+/* line 58, ../sass/site.scss */
+.floating #logo {
+  width: 250px;
 }

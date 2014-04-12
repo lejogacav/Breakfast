@@ -1,17 +1,13 @@
 'use strict';
 
-angular.module('breakfastApp', ['ngRoute'])
-.config(function ($routeProvider) {
+var app = angular.module('breakfastApp', ['ngRoute']);
+app.config(function ($routeProvider) {
     $routeProvider
-    .when('/', {
-        templateUrl: 'app/views/login.html',
-        controller: 'MainCtrl'
-    })
-    .when('/planning', {
-        templateUrl: 'app/views/planning.html',
-        controller: 'PlanningCtrl'
-    })
-    .otherwise({
-        redirectTo: '/'
-    });
+        .when('/', {
+            templateUrl: 'app/views/main.html',
+            controller: 'MainCtrl'
+        })
+        .otherwise({
+            redirectTo: '/'
+        });
 });
