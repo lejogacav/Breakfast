@@ -1,13 +1,5 @@
 // Couleurs
-$red : #e74c3c;
-$darkBlue : #34495e;
-$lightBlue : #3498db;
-$lightOrange : #e67e22;
-
-// Couleur du bandeau Breakfast
-$bandoColor : $lightOrange;
-
-// Couleurs
+$clouds : #ECF0F1;
 $lightOrange : #e67e22;
 $darkOrange : #d35400;
 $lightRed : #e74c3c;
@@ -67,4 +59,28 @@ $colorAnimationTime : 60s;
 	71.5% {color:$darkBlue;}
 	85.8% {color:$lightAsphaltBlue;}
 	100% {color:$lightOrange;}
+}
+
+// Couleur plus claire au niveau du hover du bouton 
+@-webkit-keyframes backgroundColorChangeLighten
+{
+	0% {background-color:lighten($lightOrange, 10%);}
+	14.3% {background-color:lighten($darkOrange, 10%);}
+	28.6% {background-color:lighten($lightRed, 10%);}
+	42.9% {background-color:lighten($darkRed, 10%);}
+	57.2% {background-color:lighten($lightBlue, 10%);}
+	71.5% {background-color:lighten($darkBlue, 10%);}
+	85.8% {background-color:lighten($lightAsphaltBlue, 10%);}
+	100% {background-color:lighten($lightOrange, 10%);}	
+}
+
+@keyframes backgroundColorChangeLighten {	
+	0% {background-color:lighten($lightOrange, 10%);}
+	14.3% {background-color:lighten($darkOrange, 10%);}
+	28.6% {background-color:lighten($lightRed, 10%);}
+	42.9% {background-color:lighten($darkRed, 10%);}
+	57.2% {background-color:lighten($lightBlue, 10%);}
+	71.5% {background-color:lighten($darkBlue, 10%);}
+	85.8% {background-color:lighten($lightAsphaltBlue, 10%);}
+	100% {background-color:lighten($lightOrange, 10%);}	
 }

@@ -139,175 +139,259 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 @-webkit-keyframes backgroundColorChange {
-  /* line 27, ../sass/_var.scss */
+  /* line 19, ../sass/_var.scss */
   0% {
     background-color: #e67e22;
   }
 
-  /* line 28, ../sass/_var.scss */
+  /* line 20, ../sass/_var.scss */
   14.3% {
     background-color: #d35400;
   }
 
-  /* line 29, ../sass/_var.scss */
+  /* line 21, ../sass/_var.scss */
   28.6% {
     background-color: #e74c3c;
   }
 
-  /* line 30, ../sass/_var.scss */
+  /* line 22, ../sass/_var.scss */
   42.9% {
     background-color: #c0392b;
   }
 
-  /* line 31, ../sass/_var.scss */
+  /* line 23, ../sass/_var.scss */
   57.2% {
     background-color: #3498db;
   }
 
-  /* line 32, ../sass/_var.scss */
+  /* line 24, ../sass/_var.scss */
   71.5% {
     background-color: #2980b9;
   }
 
-  /* line 33, ../sass/_var.scss */
+  /* line 25, ../sass/_var.scss */
   85.8% {
     background-color: #34495e;
   }
 
-  /* line 34, ../sass/_var.scss */
+  /* line 26, ../sass/_var.scss */
   100% {
     background-color: #e67e22;
   }
 }
 
 @keyframes backgroundColorChange {
-  /* line 38, ../sass/_var.scss */
+  /* line 30, ../sass/_var.scss */
   0% {
     background-color: #e67e22;
   }
 
-  /* line 39, ../sass/_var.scss */
+  /* line 31, ../sass/_var.scss */
   14.3% {
     background-color: #d35400;
   }
 
-  /* line 40, ../sass/_var.scss */
+  /* line 32, ../sass/_var.scss */
   28.6% {
     background-color: #e74c3c;
   }
 
-  /* line 41, ../sass/_var.scss */
+  /* line 33, ../sass/_var.scss */
   42.9% {
     background-color: #c0392b;
   }
 
-  /* line 42, ../sass/_var.scss */
+  /* line 34, ../sass/_var.scss */
   57.2% {
     background-color: #3498db;
   }
 
-  /* line 43, ../sass/_var.scss */
+  /* line 35, ../sass/_var.scss */
   71.5% {
     background-color: #2980b9;
   }
 
-  /* line 44, ../sass/_var.scss */
+  /* line 36, ../sass/_var.scss */
   85.8% {
     background-color: #34495e;
   }
 
-  /* line 45, ../sass/_var.scss */
+  /* line 37, ../sass/_var.scss */
   100% {
     background-color: #e67e22;
   }
 }
 
 @-webkit-keyframes colorChange {
-  /* line 52, ../sass/_var.scss */
+  /* line 44, ../sass/_var.scss */
   0% {
     color: #e67e22;
   }
 
-  /* line 53, ../sass/_var.scss */
+  /* line 45, ../sass/_var.scss */
   14.3% {
     color: #d35400;
   }
 
-  /* line 54, ../sass/_var.scss */
+  /* line 46, ../sass/_var.scss */
   28.6% {
     color: #e74c3c;
   }
 
-  /* line 55, ../sass/_var.scss */
+  /* line 47, ../sass/_var.scss */
   42.9% {
     color: #c0392b;
   }
 
-  /* line 56, ../sass/_var.scss */
+  /* line 48, ../sass/_var.scss */
   57.2% {
     color: #3498db;
   }
 
-  /* line 57, ../sass/_var.scss */
+  /* line 49, ../sass/_var.scss */
   71.5% {
     color: #2980b9;
   }
 
-  /* line 58, ../sass/_var.scss */
+  /* line 50, ../sass/_var.scss */
   85.8% {
     color: #34495e;
   }
 
-  /* line 59, ../sass/_var.scss */
+  /* line 51, ../sass/_var.scss */
   100% {
     color: #e67e22;
   }
 }
 
 @keyframes colorChange {
-  /* line 62, ../sass/_var.scss */
+  /* line 54, ../sass/_var.scss */
   0% {
     color: #e67e22;
   }
 
-  /* line 63, ../sass/_var.scss */
+  /* line 55, ../sass/_var.scss */
   14.3% {
     color: #d35400;
   }
 
-  /* line 64, ../sass/_var.scss */
+  /* line 56, ../sass/_var.scss */
   28.6% {
     color: #e74c3c;
   }
 
-  /* line 65, ../sass/_var.scss */
+  /* line 57, ../sass/_var.scss */
   42.9% {
     color: #c0392b;
   }
 
-  /* line 66, ../sass/_var.scss */
+  /* line 58, ../sass/_var.scss */
   57.2% {
     color: #3498db;
   }
 
-  /* line 67, ../sass/_var.scss */
+  /* line 59, ../sass/_var.scss */
   71.5% {
     color: #2980b9;
   }
 
-  /* line 68, ../sass/_var.scss */
+  /* line 60, ../sass/_var.scss */
   85.8% {
     color: #34495e;
   }
 
-  /* line 69, ../sass/_var.scss */
+  /* line 61, ../sass/_var.scss */
   100% {
     color: #e67e22;
   }
 }
 
+@-webkit-keyframes backgroundColorChangeLighten {
+  /* line 67, ../sass/_var.scss */
+  0% {
+    background-color: #eb9950;
+  }
+
+  /* line 68, ../sass/_var.scss */
+  14.3% {
+    background-color: #ff6a07;
+  }
+
+  /* line 69, ../sass/_var.scss */
+  28.6% {
+    background-color: #ed7669;
+  }
+
+  /* line 70, ../sass/_var.scss */
+  42.9% {
+    background-color: #d65548;
+  }
+
+  /* line 71, ../sass/_var.scss */
+  57.2% {
+    background-color: #5faee3;
+  }
+
+  /* line 72, ../sass/_var.scss */
+  71.5% {
+    background-color: #409ad5;
+  }
+
+  /* line 73, ../sass/_var.scss */
+  85.8% {
+    background-color: #46627f;
+  }
+
+  /* line 74, ../sass/_var.scss */
+  100% {
+    background-color: #eb9950;
+  }
+}
+
+@keyframes backgroundColorChangeLighten {
+  /* line 78, ../sass/_var.scss */
+  0% {
+    background-color: #eb9950;
+  }
+
+  /* line 79, ../sass/_var.scss */
+  14.3% {
+    background-color: #ff6a07;
+  }
+
+  /* line 80, ../sass/_var.scss */
+  28.6% {
+    background-color: #ed7669;
+  }
+
+  /* line 81, ../sass/_var.scss */
+  42.9% {
+    background-color: #d65548;
+  }
+
+  /* line 82, ../sass/_var.scss */
+  57.2% {
+    background-color: #5faee3;
+  }
+
+  /* line 83, ../sass/_var.scss */
+  71.5% {
+    background-color: #409ad5;
+  }
+
+  /* line 84, ../sass/_var.scss */
+  85.8% {
+    background-color: #46627f;
+  }
+
+  /* line 85, ../sass/_var.scss */
+  100% {
+    background-color: #eb9950;
+  }
+}
+
 /*@import url(http://fonts.googleapis.com/css?family=Bevan);*/
-/* line 11, ../sass/site.scss */
+/* line 12, ../sass/site.scss */
 #left-content {
   -webkit-animation: backgroundColorChange 60s infinite;
   animation: backgroundColorChange 60s infinite;
@@ -316,13 +400,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   display: table;
 }
-/* line 19, ../sass/site.scss */
+/* line 20, ../sass/site.scss */
 #left-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 26, ../sass/site.scss */
+/* line 27, ../sass/site.scss */
 #right-content {
   background: white url(/img/background.png) repeat;
   width: 65%;
@@ -331,13 +415,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   display: table;
 }
-/* line 33, ../sass/site.scss */
+/* line 34, ../sass/site.scss */
 #right-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 41, ../sass/site.scss */
+/* line 42, ../sass/site.scss */
 form input[type=text], form input[type=password] {
   -webkit-animation: colorChange 60s infinite;
   animation: colorChange 60s infinite;
@@ -347,13 +431,100 @@ form input[type=text], form input[type=password] {
   padding-left: 15px;
   outline: none;
 }
-/* line 52, ../sass/site.scss */
-form input[type=text], form input[type=password], form input[type=submit] {
+/* line 53, ../sass/site.scss */
+form input[type=text], form input[type=password], form input[type=submit], form .error, form .message, form .required {
   font-family: 'Roboto';
   font-size: 18px;
 }
 
-/* line 58, ../sass/site.scss */
+/* line 59, ../sass/site.scss */
+.message {
+  -webkit-animation: backgroundColorChangeLighten 60s infinite;
+  animation: backgroundColorChangeLighten 60s infinite;
+  padding: 10px;
+  width: 32%;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* line 70, ../sass/site.scss */
+.error, .required {
+  background-color: #ed7669;
+  padding: 10px;
+  width: 32%;
+  border-radius: 10px;
+  color: white;
+}
+
+/* line 79, ../sass/site.scss */
+.event {
+  /* margin-left: 3%;
+  margin-top: 3%; */
+  height: 100%;
+  width: 100%;
+}
+/* line 84, ../sass/site.scss */
+.event header, .event footer {
+  height: 52px;
+  width: 280px;
+}
+/* line 88, ../sass/site.scss */
+.event header {
+  -webkit-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -ms-border-radius: 7px 7px 0 0;
+  -o-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+  background-color: #323a45;
+  color: white;
+}
+/* line 93, ../sass/site.scss */
+.event footer {
+  -webkit-border-radius: 0 0 7px 7px;
+  -moz-border-radius: 0 0 7px 7px;
+  -ms-border-radius: 0 0 7px 7px;
+  -o-border-radius: 0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
+  background-color: #ecf0f1;
+}
+/* line 97, ../sass/site.scss */
+.event .date {
+  font-family: 'Bevan';
+}
+/* line 100, ../sass/site.scss */
+.event .name {
+  font-family: 'Roboto';
+}
+/* line 103, ../sass/site.scss */
+.event .calendar, .event .user {
+  margin-left: 6%;
+  margin-top: 6%;
+}
+/* line 107, ../sass/site.scss */
+.event .name, .event .date {
+  margin-left: 10px;
+}
+
+/* line 112, ../sass/site.scss */
+.eventContainer {
+  display: inline-block;
+  height: 104px;
+  width: 280px;
+  margin: 10px;
+}
+
+/* .btn {
+	-webkit-animation:backgroundColorChange $colorAnimationTime infinite;
+	animation:backgroundColorChange $colorAnimationTime infinite;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	&:hover{
+		background-color: white;
+	}
+}
+ */
+/* line 130, ../sass/site.scss */
 .floating #logo {
   width: 250px;
 }

@@ -1,22 +1,64 @@
 'use strict';
 
 var app = angular.module('breakfastApp');
-app.controller('MainCtrl', function ($scope) {
+
+// Controller Plannification
+app.controller('PlannificationCtrl', function ($scope) {
+    // On raffraîchi la liste des évènements
+    dpd.events.get(function (result, err) {
+        if(err) return console.log(err);
+        $scope.events = result;
+        $scope.$apply();
+    });
 
 	// On vérifie si le formulaire est valide
-   $scope.submitLogin = function () {
-		dpd.users.login({username: $scope.username, password: $scope.password}, function(user, err) {
-			if(err) {
-                loggedInStatus.setStatus("false");
-				alert(err.message);
-			} else{ 	
-                loggedInStatus.setStatus("true");
-				location.href="/#/planning"
-			}
-		});
-   }; 
+   $scope.addEvent = function ($valid) {
+        if($valid){
+            //On met le nom et le prénom en capitales
+            var name = $scope.eventForm.name.toUpperCase();
+            var firstname = $scope.eventForm.firstname.charAt(0).toUpperCase() + $scope.eventForm.firstname.substring(1);
+            // On envoi les information du form en base
+    		dpd.events.post({"name": name,"firstname": firstname,"entitled": $scope.eventForm.entitled,"date": $scope.eventForm.date}, function(result, err) {
+                  if(err) return console.log(err);
+                  else {
+                    // Reset formulaire
+                    /*$scope.eventForm.name = "";
+                    $scope.eventForm.firstname = "";
+                    $scope.eventForm.entitled = "";
+                    $scope.eventForm.date = "";
+                    $scope.$apply();*/
+                    location.href = "#/events";
+                  }
+            });
+        }
+        else{
+            alert($valid);
+        }
+   };
 });
 
+
+// Controller Evènements
+app.controller('EventCtrl', function ($scope) {
+    // On raffraîchi la liste des évènements
+    dpd.events.get(function (result, err) {
+        if(err) return console.log(err);
+        $scope.events = result;
+        $scope.$apply();
+    });
+
+});
+
+
+app.directive('ngEvent', function (){
+    return {
+        scope : {
+            event :'='
+        },
+        restrict : 'E',
+        templateUrl: '/app/views/partials/_event.html'
+    }
+});
 
 
 /*app.service('loggedInStatus', function () {  

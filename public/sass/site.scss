@@ -5,6 +5,7 @@
 @import "print";
 @import "var";
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
+@import "compass/css3/border-radius";
 /*@import url(http://fonts.googleapis.com/css?family=Bevan);*/
 
 //Partie gauche de la page
@@ -48,12 +49,83 @@ form {
 		padding-left: 15px;
 		outline: none;	
 	}
-	input[type=text], input[type=password], input[type=submit]
+	input[type=text], input[type=password], input[type=submit], .error, .message, .required
 	{
 	  	font-family: 'Roboto';
 		font-size: 18px;	
 	}
 }
+
+.message {
+	// Changement de couleur
+	-webkit-animation:backgroundColorChangeLighten $colorAnimationTime infinite;
+	animation:backgroundColorChangeLighten $colorAnimationTime infinite; 
+	padding: 10px;
+	width: 32%;
+	border-radius: 10px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.error, .required {
+	background-color: lighten($lightRed, 10%);
+	padding: 10px;
+	width: 32%;
+	border-radius: 10px;
+	color: white;
+}
+
+// CSS Evènements
+.event {	
+  	/* margin-left: 3%;
+  	margin-top: 3%; */
+	height: 100%;
+	width: 100%;
+	header, footer{
+		height: 52px;
+		width: 280px;		
+	}
+	header{
+		@include border-radius(7px 7px 0 0);
+		background-color: #323a45;		
+		color: white;
+	}
+	footer{
+		@include border-radius(0 0 7px 7px);
+		background-color: $clouds;
+	}
+	.date{
+  		font-family: 'Bevan';
+	}
+	.name{
+  		font-family: 'Roboto';
+	}
+	.calendar, .user{
+		margin-left: 6%;
+		margin-top: 6%;
+	}
+	.name, .date{
+		margin-left: 10px;
+	}
+}
+
+.eventContainer{
+	display: inline-block;
+	height: 104px;
+	width: 280px;	
+	margin: 10px;
+}
+
+/* .btn {
+	-webkit-animation:backgroundColorChange $colorAnimationTime infinite;
+	animation:backgroundColorChange $colorAnimationTime infinite;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	&:hover{
+		background-color: white;
+	}
+}
+ */
 
 .floating #logo {
 	width: 250px;

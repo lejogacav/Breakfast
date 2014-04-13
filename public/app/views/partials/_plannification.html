@@ -1,0 +1,35 @@
+<center>
+	<!-- Passe dans la variable et vérifie si le formulaire est valide ou non -->
+	<form name="eventForm" ng-submit="addEvent(eventForm.$valid)" novalidate>
+		<div class="message">Plannifiez votre petit déjeuner dès maintenant !</div>
+	    <ul>
+	        <li>
+	            <input type="text" placeholder="Nom" ng-model="eventForm.name" required/>
+	        </li>
+	        <li>
+	            <input type="text" placeholder="Prénom" ng-model="eventForm.firstname" required/>
+	        </li>
+	        <li>
+	            <input type="text" placeholder="Intitulé évènement" ng-model="eventForm.entitled" required/>
+	        </li>
+	        <li>
+	            <input class="datepicker" type="text" placeholder="Date" ng-model="eventForm.date" required/>
+	        </li>
+	        <li>
+	            <input type="submit" value="Ajouter" class="btn" ng-disabled="eventForm.$error.required"/>
+	            <p class="required" ng-show="eventForm.$error.required">Tous les champs sont obligatoires !</p>
+	        </li>
+	    </ul>
+	</form>	
+</center>
+
+<script type="text/javascript">
+	$( '.datepicker' ).pickadate({
+	    format: 'dd/mm/yyyy',
+	    monthsFull: [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
+	    monthsShort: [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec' ],
+	    weekdaysShort: [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ],
+	    today: 'aujourd\'hui',
+	    clear: 'effacer'
+	});
+</script>
