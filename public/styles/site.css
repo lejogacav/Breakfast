@@ -514,17 +514,39 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   margin: 10px;
 }
 
-/* .btn {
-	-webkit-animation:backgroundColorChange $colorAnimationTime infinite;
-	animation:backgroundColorChange $colorAnimationTime infinite;
-	color: white;
-	padding: 5px 20px 5px 20px;
-	&:hover{
-		background-color: white;
-	}
-}
- */
-/* line 130, ../sass/site.scss */
+/* line 119, ../sass/site.scss */
 .floating #logo {
   width: 250px;
+}
+
+/* Calendrier */
+/* line 124, ../sass/site.scss */
+.fc-calendar-container {
+  height: 400px;
+  width: auto;
+  padding: 30px;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* line 134, ../sass/site.scss */
+.fc-calendar .fc-row div {
+  background: #fff;
+  cursor: pointer;
+}
+/* line 137, ../sass/site.scss */
+.fc-calendar .fc-row div.fc-today {
+  background: #e67e22 !important;
+}
+/* line 140, ../sass/site.scss */
+.fc-calendar .fc-row div:last-child {
+  border-right: 1px solid #ddd !important;
+}
+/* line 145, ../sass/site.scss */
+.fc-calendar .fc-head {
+  background: transparent;
+  color: #d35400 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
 }

@@ -47,13 +47,18 @@ app.controller('EventCtrl', function ($scope) {
         $scope.$apply();
     });
 
+    $scope.ctrlFn = function(test) {
+        alerte.log(test);
+    }
+
 });
 
 
 app.directive('ngEvent', function (){
     return {
         scope : {
-            event :'='
+            event :'=',
+            deleteEventFn : '&deleteFn'
         },
         restrict : 'E',
         templateUrl: '/app/views/partials/_event.html'

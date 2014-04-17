@@ -1,6 +1,5 @@
-<center>
-	<!-- Passe dans la variable et vérifie si le formulaire est valide ou non -->
-	<form name="eventForm" ng-submit="addEvent(eventForm.$valid)" novalidate>
+<!-- <center>
+		<form name="eventForm" ng-submit="addEvent(eventForm.$valid)" novalidate>
 		<div class="message">Plannifiez votre petit déjeuner dès maintenant !</div>
 	    <ul>
 	        <li>
@@ -21,15 +20,63 @@
 	        </li>
 	    </ul>
 	</form>	
+</center> -->
+<center>
+	<div id="calendar" class="fc-calendar-container"></div>
 </center>
 
+
 <script type="text/javascript">
-	$( '.datepicker' ).pickadate({
+	/*$( '.datepicker' ).pickadate({
 	    format: 'dd/mm/yyyy',
 	    monthsFull: [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
 	    monthsShort: [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec' ],
 	    weekdaysShort: [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ],
 	    today: 'aujourd\'hui',
 	    clear: 'effacer'
+	});*/
+	$('#calendar').calendario({
+		// initialize calendar with this month (1-12). Default is today
+		month : null,
+		 
+		// initialize calendar with this year. Default is today
+		year : null,
+		 
+		// initial data/content for the calendar
+		// format:
+		// {
+		//      'MM-DD-YYYY' : 'HTML Content',
+		//      'MM-DD-YYYY' : 'HTML Content',
+		//      'MM-DD-YYYY' : 'HTML Content'
+		//      ...
+		//  }
+		caldata : null,
+		weeks : [ 'Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi' ],
+		weekabbrs : [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ],
+		months : [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
+		monthabbrs : [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aout', 'Sept', 'Oct', 'Nov', 'Dec' ],
+		 
+		// choose between values in options.weeks or options.weekabbrs
+		displayWeekAbbr : false,
+		 
+		// choose between values in options.months or options.monthabbrs
+		displayMonthAbbr : false,
+		 
+		// left-most day in the calendar
+		// 0 - Sunday, 1 - Monday, ... , 6 - Saturday
+		startIn : 1,
+		 
+		// callback function for when clicking on a day cell in the calendar
+		// $el is the cell
+		// $content is the content division of the cell
+		// dateProperties is an object with the following properties:
+		// day : day number,
+		// month : month number from 1 - 12,
+		// monthname : name from options.months,
+		// year : year number,
+		// weekday : week number from 0 - 6,
+		// weekdayname : name from options.weeks
+		onDayClick : function( $el, $content, dateProperties ) { alert('test'); }
 	});
+
 </script>
