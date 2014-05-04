@@ -195,7 +195,8 @@
 }
 
 .fc-calendar .fc-row > div {
-	background: #fff;
+	/*background: #fff;*/
+	background: transparent;
 	cursor: pointer;
 }
 
@@ -203,7 +204,7 @@
 	background: transparent;
 }
 
-.fc-calendar .fc-row > div > span.fc-date {
+.fc-calendar .fc-row > div > span.fc-circle {
 	top: 50%;
 	left: 50%;
 	text-align: center;
@@ -214,11 +215,11 @@
 }
 
 .fc-calendar .fc-row > div.fc-today {
-	background: #ef4f69;
-	box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);
+	/*background: #ef4f69;*/
+	/*box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);*/
 }
 
-.fc-calendar .fc-row > div.fc-today > span.fc-date {
+.fc-calendar .fc-row > div.fc-today > span.fc-circle {
 	color: #fff;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
@@ -258,7 +259,7 @@
 	.fc-calendar-container {
 		height: 300px;
 	}
-	.fc-calendar .fc-row > div > span.fc-date {
+	.fc-calendar .fc-row > div > span.fc-circle {
 		font-size: 15px;
 	}
 }

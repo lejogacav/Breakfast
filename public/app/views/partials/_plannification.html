@@ -22,20 +22,19 @@
 	</form>	
 </center> -->
 <center>
+	<div id="calendar-nav" class="custom-header clearfix">		
+		<span id="custom-prev" class="custom-prev">previous</span>
+		<span id="custom-next" class="custom-next">next</span>
+		<h2 id="custom-month" class="custom-month"></h2>
+		<h3 id="custom-year" class="custom-year"></h3>
+	</div>
 	<div id="calendar" class="fc-calendar-container"></div>
 </center>
 
 
 <script type="text/javascript">
-	/*$( '.datepicker' ).pickadate({
-	    format: 'dd/mm/yyyy',
-	    monthsFull: [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
-	    monthsShort: [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec' ],
-	    weekdaysShort: [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ],
-	    today: 'aujourd\'hui',
-	    clear: 'effacer'
-	});*/
-	$('#calendar').calendario({
+	// Initialisation du calendrier Calendario
+	var cal = $('#calendar').calendario({
 		// initialize calendar with this month (1-12). Default is today
 		month : null,
 		 
@@ -57,7 +56,7 @@
 		monthabbrs : [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aout', 'Sept', 'Oct', 'Nov', 'Dec' ],
 		 
 		// choose between values in options.weeks or options.weekabbrs
-		displayWeekAbbr : false,
+		displayWeekAbbr : true,
 		 
 		// choose between values in options.months or options.monthabbrs
 		displayMonthAbbr : false,
@@ -76,7 +75,31 @@
 		// year : year number,
 		// weekday : week number from 0 - 6,
 		// weekdayname : name from options.weeks
-		onDayClick : function( $el, $content, dateProperties ) { alert('test'); }
+		onDayClick : function( $el, $content, dateProperties ) { 
+			debugger;
+			alert("jour n°: " + dateProperties.day); 
+		}
+	});
+	
+	// Initialisation des variables
+	var month = $('#custom-month');
+	var year = $('#custom-year');
+	// Mise à jour du mois et de l'année
+	updateMonthYear();
+
+	// On défini la navigation au clic
+	$('#custom-next').on('click', function(){
+		cal.gotoNextMonth(updateMonthYear);
 	});
 
+	// On défini la navigation au clic
+	$('#custom-prev').on('click', function(){
+		cal.gotoPreviousMonth(updateMonthYear);
+	});
+
+	// Met à jour la date
+	function updateMonthYear(){
+		month.html(cal.getMonthName());
+		year.html(cal.getYear());
+	}
 </script>

@@ -68,12 +68,11 @@
 			var self = this;
 
 			this.$el.on( 'click.calendario', 'div.fc-row > div', function() {
-
 				var $cell = $( this ),
 					idx = $cell.index(),
 					$content = $cell.children( 'div' ),
 					dateProp = {
-						day : $cell.children( 'span.fc-date' ).text(),
+						day : $cell.children('span.fc-circle').children('span.fc-date').text(),
 						month : self.month + 1,
 						monthname : self.options.displayMonthAbbr ? self.options.monthabbrs[ self.month ] : self.options.months[ self.month ],
 						year : self.year,
@@ -156,7 +155,7 @@
 					
 					if ( day <= monthLength && ( i > 0 || j >= p ) ) {
 
-						inner += '<span class="fc-date">' + day + '</span><span class="fc-weekday">' + this.options.weekabbrs[ j + this.options.startIn > 6 ? j + this.options.startIn - 6 - 1 : j + this.options.startIn ] + '</span>';
+						inner += '<span class="fc-circle"><span class="fc-date">' + day + '</span></span><span class="fc-weekday">' + this.options.weekabbrs[ j + this.options.startIn > 6 ? j + this.options.startIn - 6 - 1 : j + this.options.startIn ] + '</span>';
 
 						// this day is:
 						var strdate = ( this.month + 1 < 10 ? '0' + ( this.month + 1 ) : this.month + 1 ) + '-' + ( day < 10 ? '0' + day : day ) + '-' + this.year,

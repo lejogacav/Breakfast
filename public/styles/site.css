@@ -393,20 +393,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*@import url(http://fonts.googleapis.com/css?family=Bevan);*/
 /* line 12, ../sass/site.scss */
 #left-content {
-  -webkit-animation: backgroundColorChange 60s infinite;
-  animation: backgroundColorChange 60s infinite;
+  /* -webkit-animation:backgroundColorChange $colorAnimationTime infinite;
+  animation:backgroundColorChange $colorAnimationTime infinite;  */
+  background-color: #d35400;
   width: 35%;
   height: 100vh;
   position: absolute;
   display: table;
 }
-/* line 20, ../sass/site.scss */
+/* line 21, ../sass/site.scss */
 #left-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 27, ../sass/site.scss */
+/* line 28, ../sass/site.scss */
 #right-content {
   background: white url(/img/background.png) repeat;
   width: 65%;
@@ -415,32 +416,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: absolute;
   display: table;
 }
-/* line 34, ../sass/site.scss */
+/* line 35, ../sass/site.scss */
 #right-content center {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 42, ../sass/site.scss */
+/* line 43, ../sass/site.scss */
 form input[type=text], form input[type=password] {
-  -webkit-animation: colorChange 60s infinite;
-  animation: colorChange 60s infinite;
+  /* -webkit-animation:colorChange $colorAnimationTime infinite;
+  animation:colorChange $colorAnimationTime infinite;  */
+  color: #d35400;
   width: 200px;
   height: 40px;
   margin-bottom: 10px;
   padding-left: 15px;
   outline: none;
 }
-/* line 53, ../sass/site.scss */
+/* line 55, ../sass/site.scss */
 form input[type=text], form input[type=password], form input[type=submit], form .error, form .message, form .required {
   font-family: 'Roboto';
   font-size: 18px;
 }
 
-/* line 59, ../sass/site.scss */
+/* line 61, ../sass/site.scss */
 .message {
-  -webkit-animation: backgroundColorChangeLighten 60s infinite;
-  animation: backgroundColorChangeLighten 60s infinite;
+  /* -webkit-animation:backgroundColorChangeLighten $colorAnimationTime infinite;
+  animation:backgroundColorChangeLighten $colorAnimationTime infinite;  */
+  background-color: #d35400;
   padding: 10px;
   width: 32%;
   border-radius: 10px;
@@ -448,7 +451,7 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   margin-bottom: 10px;
 }
 
-/* line 70, ../sass/site.scss */
+/* line 73, ../sass/site.scss */
 .error, .required {
   background-color: #ed7669;
   padding: 10px;
@@ -457,19 +460,19 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   color: white;
 }
 
-/* line 79, ../sass/site.scss */
+/* line 82, ../sass/site.scss */
 .event {
   /* margin-left: 3%;
   margin-top: 3%; */
   height: 100%;
   width: 100%;
 }
-/* line 84, ../sass/site.scss */
+/* line 87, ../sass/site.scss */
 .event header, .event footer {
   height: 52px;
   width: 280px;
 }
-/* line 88, ../sass/site.scss */
+/* line 91, ../sass/site.scss */
 .event header {
   -webkit-border-radius: 7px 7px 0 0;
   -moz-border-radius: 7px 7px 0 0;
@@ -479,7 +482,7 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   background-color: #323a45;
   color: white;
 }
-/* line 93, ../sass/site.scss */
+/* line 96, ../sass/site.scss */
 .event footer {
   -webkit-border-radius: 0 0 7px 7px;
   -moz-border-radius: 0 0 7px 7px;
@@ -488,25 +491,25 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   border-radius: 0 0 7px 7px;
   background-color: #ecf0f1;
 }
-/* line 97, ../sass/site.scss */
+/* line 100, ../sass/site.scss */
 .event .date {
   font-family: 'Bevan';
 }
-/* line 100, ../sass/site.scss */
+/* line 103, ../sass/site.scss */
 .event .name {
   font-family: 'Roboto';
 }
-/* line 103, ../sass/site.scss */
+/* line 106, ../sass/site.scss */
 .event .calendar, .event .user {
   margin-left: 6%;
   margin-top: 6%;
 }
-/* line 107, ../sass/site.scss */
+/* line 110, ../sass/site.scss */
 .event .name, .event .date {
   margin-left: 10px;
 }
 
-/* line 112, ../sass/site.scss */
+/* line 115, ../sass/site.scss */
 .eventContainer {
   display: inline-block;
   height: 104px;
@@ -514,13 +517,13 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   margin: 10px;
 }
 
-/* line 119, ../sass/site.scss */
+/* line 122, ../sass/site.scss */
 .floating #logo {
   width: 250px;
 }
 
 /* Calendrier */
-/* line 124, ../sass/site.scss */
+/* line 127, ../sass/site.scss */
 .fc-calendar-container {
   height: 400px;
   width: auto;
@@ -529,20 +532,12 @@ form input[type=text], form input[type=password], form input[type=submit], form 
   box-shadow: none !important;
 }
 
-/* line 134, ../sass/site.scss */
+/* line 137, ../sass/site.scss */
 .fc-calendar .fc-row div {
   background: #fff;
   cursor: pointer;
 }
-/* line 137, ../sass/site.scss */
-.fc-calendar .fc-row div.fc-today {
-  background: #e67e22 !important;
-}
-/* line 140, ../sass/site.scss */
-.fc-calendar .fc-row div:last-child {
-  border-right: 1px solid #ddd !important;
-}
-/* line 145, ../sass/site.scss */
+/* line 148, ../sass/site.scss */
 .fc-calendar .fc-head {
   background: transparent;
   color: #d35400 !important;

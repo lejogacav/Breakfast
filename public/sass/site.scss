@@ -11,8 +11,9 @@
 //Partie gauche de la page
 #left-content {
 	// Changement de couleur
-	-webkit-animation:backgroundColorChange $colorAnimationTime infinite;
-	animation:backgroundColorChange $colorAnimationTime infinite; 
+	/* -webkit-animation:backgroundColorChange $colorAnimationTime infinite;
+	animation:backgroundColorChange $colorAnimationTime infinite;  */
+	background-color: $darkOrange;
 	width: 35%;
 	height: 100vh;
 	position: absolute;
@@ -41,8 +42,9 @@ form {
 	input[type=text], input[type=password]
 	{
 		// Changement de couleur
-		-webkit-animation:colorChange $colorAnimationTime infinite;
-		animation:colorChange $colorAnimationTime infinite; 
+		/* -webkit-animation:colorChange $colorAnimationTime infinite;
+		animation:colorChange $colorAnimationTime infinite;  */
+		color: $darkOrange;
 		width: 200px;
 		height: 40px;
 		margin-bottom: 10px;
@@ -58,8 +60,9 @@ form {
 
 .message {
 	// Changement de couleur
-	-webkit-animation:backgroundColorChangeLighten $colorAnimationTime infinite;
-	animation:backgroundColorChangeLighten $colorAnimationTime infinite; 
+	/* -webkit-animation:backgroundColorChangeLighten $colorAnimationTime infinite;
+	animation:backgroundColorChangeLighten $colorAnimationTime infinite;  */
+	background-color: $darkOrange;
 	padding: 10px;
 	width: 32%;
 	border-radius: 10px;
@@ -135,10 +138,10 @@ form {
 			background: #fff;
 			cursor: pointer;
 			&.fc-today {
-				background: $lightOrange !important;
+				// background: $darkOrange !important;
 			}
 			&:last-child{
-				border-right: 1px solid #ddd !important;				
+				// border-right: 1px solid #ddd !important;				
 			}
 		}
 	}
